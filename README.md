@@ -54,3 +54,4 @@ So, feel free to fork this repo. If you do, please just give me proper credit by
 - [ ] Created a learn more page for projects.
 - [ ] Optimize images. 
 - [ ] Build out project pages.
+- [ ] Remove unused images / components / 
