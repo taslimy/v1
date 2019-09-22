@@ -1,5 +1,6 @@
 
 # V.1 Portfolio Theme
+[![Netlify Status](https://api.netlify.com/api/v1/badges/800f74d5-43ab-407e-a59a-241bb5a6bb8e/deploy-status)](https://app.netlify.com/sites/hardcore-mccarthy-0e4870/deploys)
 
 This is the first iteration of my portfolio website and theme. I aimed for a very minimalist design to keep it very simple.
 

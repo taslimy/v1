@@ -16,35 +16,35 @@ const IndexPage = () => {
       query {
         keycon: file(absolutePath: { regex: "/key-con.png/" }) {
           childImageSharp {
-            fluid(maxWidth: 1200, maxHeight: 650) {
+            fluid(maxWidth: 1200, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         pintereach: file(absolutePath: { regex: "/pintereach.png/" }) {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 1200, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         partyplanner: file(absolutePath: { regex: "/party-planner.png/" }) {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 1200, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         simpsonssays: file(absolutePath: { regex: "/simpsons-says.png/" }) {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 1200, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         devtheme: file(absolutePath: { regex: "/dev-theme.png/" }) {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 1200, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }

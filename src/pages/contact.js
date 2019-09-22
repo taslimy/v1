@@ -100,7 +100,7 @@ const aboutMe = graphql`
   query aboutMe {
     aboutme: file(absolutePath: { regex: "/aboutme.png/" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(maxWidth: 1200, quality:90) {
           ...GatsbyImageSharpFluid
         }
       }
