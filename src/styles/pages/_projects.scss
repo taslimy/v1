@@ -1,0 +1,72 @@
+/* project Page */
+
+.projectCover {
+  height: 500px;
+  width: 100%;
+  margin: 20px auto 0px;
+}
+
+.projectHead {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+
+.projectHead h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+
+  h2 {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    font-weight: 400;
+    color: #202124;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+
+  ul li {
+    padding: 0px 5px 0px 0px;
+    color: #999;
+  }
+}
+
+.projectDescription {
+  p {
+    width: auto;
+  }
+}
+
+.link-color {
+  color: #5183f5;
+}
+
+.project-info {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 20px;
+
+  h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+  }
+
+  ul { 
+    border: none;
+    flex-direction: row;
+  }
+  li {
+    color: #202124 !important;
+    margin-right: 10px;
+    font-weight: 400;
+    font-style: italic;
+  }
+}

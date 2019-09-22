@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  color: #414141;
+  border-top: 1px solid #eaeaeb;
+  padding: 50px 0;
+  margin: 20px auto -20px;
+  width: 1200px;
+  nav {
+    display: flex;
+    color: #414141;
+    letter-spacing: 0.2em;
+
+    li {
+      font-family: "Karla", sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #a8a8a7;
+      font-size: 12px;
+      transition: color 0.4s ease 0s;
+      margin: 0px 15px;
+      a {
+        color: #aaa;
+      }
+      a:hover {
+        color: #111;
+        text-decoration: none !important;
+        transition: all 0.5s ease;
+      }
+      .current a {
+        color: #000;
+        font-family: "Karla", sans-serif;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.foot {
+  font-size: 12px;
+}
+
