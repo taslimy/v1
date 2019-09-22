@@ -16,7 +16,7 @@ class Contact extends Component {
             render={data => (
               <Image
                 fluid={data.aboutme.childImageSharp.fluid}
-                alt="testesteste"
+                alt="About me"
                 className="aboutImg"
               />
             )}
@@ -87,7 +87,7 @@ class Contact extends Component {
             </p>
             <p>
               <i className="fas fa-angle-right"></i>
-              <a href="tel:1234568910"> +1 347 437 9337</a>
+              <a href="tel:13474379337"> +1 347 437 9337</a>
             </p>
           </div>
         </section>

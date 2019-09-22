@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import { Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
 import keycon from "../images/key-con.png"
 import devtheme from "../images/dev-theme.png"
 import partyplanner from "../images/party-planner.png"
@@ -13,7 +15,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <section>
       <ul className="project-list">
-        <li className="key-con">
+        <li className="">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -37,8 +39,16 @@ const IndexPage = () => (
               </div>
             </div>
             <div className="img-container">
-              <img src={keycon} alt="Key Conservation" loading="lazy" />
+              <StaticQuery
+                query={query}
+                render={data => (
+                  <Image
+                    fluid={data.keycon1.childImageSharp.fluid}
+                    alt="Key Conservation"
+                  />
+                )}
               />
+              {/* <img src={keycon} alt="Key Conservation" loading="lazy" /> */}
             </div>
           </a>
         </li>
@@ -71,8 +81,16 @@ const IndexPage = () => (
               </div>
             </div>
             <div className="img-container">
-              <img src={pintereach} alt="Pintereach" loading="lazy" />
+              <StaticQuery
+                query={query}
+                render={data => (
+                  <Image
+                    fluid={data.pintereach.childImageSharp.fluid}
+                    alt="Pintereach"
+                  />
+                )}
               />
+              {/* <img src={pintereach} alt="Pintereach" loading="lazy" /> */}
             </div>
           </a>
         </li>
@@ -105,8 +123,16 @@ const IndexPage = () => (
               </div>
             </div>
             <div className="img-container">
-              <img src={partyplanner} alt="Party Planner" loading="lazy" />
+              <StaticQuery
+                query={query}
+                render={data => (
+                  <Image
+                    fluid={data.partyplanner.childImageSharp.fluid}
+                    alt="Party Planner"
+                  />
+                )}
               />
+              {/* <img src={partyplanner} alt="Party Planner" loading="lazy" /> */}
             </div>
           </a>
         </li>
@@ -136,8 +162,16 @@ const IndexPage = () => (
               </div>
             </div>
             <div className="img-container">
-              <img src={simpsonssays} alt="Simpsons Says" />
+              <StaticQuery
+                query={query}
+                render={data => (
+                  <Image
+                    fluid={data.simpsonssays.childImageSharp.fluid}
+                    alt="Simpsons Says"
+                  />
+                )}
               />
+              {/* <img src={simpsonssays} alt="Simpsons Says" /> */}
             </div>
           </a>
         </li>
@@ -167,8 +201,16 @@ const IndexPage = () => (
               </div>
             </div>
             <div className="img-container">
-              <img src={devtheme} alt="Dev Theme" />
+              <StaticQuery
+                query={query}
+                render={data => (
+                  <Image
+                    fluid={data.devtheme.childImageSharp.fluid}
+                    alt="Dev. Theme"
+                  />
+                )}
               />
+              {/* <img src={devtheme} alt="Dev Theme" loading="lazy" /> */}
             </div>
           </a>
         </li>
@@ -176,5 +218,45 @@ const IndexPage = () => (
     </section>
   </Layout>
 )
+
+const query = graphql`
+  query keycon1 {
+    keycon1: file(absolutePath: { regex: "/key-con.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200, maxHeight: 650) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    pintereach: file(absolutePath: { regex: "/pintereach.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    partyplanner: file(absolutePath: { regex: "/party-planner.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    simpsonssays: file(absolutePath: { regex: "/simpsons-says.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    devtheme: file(absolutePath: { regex: "/dev-theme.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
