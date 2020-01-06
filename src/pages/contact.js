@@ -24,8 +24,8 @@ class Contact extends Component {
           <div className="aboutP">
             <h2>about</h2>
             <p>
-              My name <strong>Taslim Yakub</strong>, I am a Full Stack
-              Developer. I have had on on off coding experience and now I've
+              My name is <strong>Taslim Yakub</strong>, I am a Full Stack
+              Developer. I have had an on and off coding experience and now I've
               dedicated myself to becoming a developer. In my down time when I'm
               not learning, or programming, I mostly play video games especially
               Dota 2 and the occasional Minecraft, watching movies, and
